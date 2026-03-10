@@ -12,7 +12,13 @@ count=0
 i=1
 
 for item in data[:10]:
-    status = "Completed" if item["completed"] else "Incomplete"
+    if item["completed"]:
+        status = "Completed" 
+
+    else:
+        status= "Incomplete"
+        count +=1
+
 
     print(i, item["title"])
     print("Status:", status)
