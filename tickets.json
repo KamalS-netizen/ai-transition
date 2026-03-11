@@ -1,0 +1,6 @@
+[
+  {"id": 1, "text": "User cannot login to account"},
+  {"id": 2, "text": "Payment failed during checkout"},
+  {"id": 3, "text": "Customer requesting refund"},
+  {"id": 4, "text": "Login page showing error"}
+]
