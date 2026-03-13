@@ -2,5 +2,8 @@
   {"id": 1, "text": "User cannot login to account"},
   {"id": 2, "text": "Payment failed during checkout"},
   {"id": 3, "text": "Customer requesting refund"},
-  {"id": 4, "text": "Login page showing error"}
+  {"id": 4, "text": "Login page showing error"},
+  {"id": 5, "text": "Customer says they were charged twice"},
+  {"id": 6, "text": "There is a typo on the settings page"}, 
+  {"id": 999, "text": "Temporary test ticket"}
 ]
