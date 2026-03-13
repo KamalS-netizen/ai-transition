@@ -9,6 +9,19 @@ def load_tickets():
     with open("tickets.json", "r") as file:
         return json.load(file)
 
+def build_open_queue_counts(results):
+    open_queue_counts = {
+        "high": 0,
+        "medium": 0
+    }
+
+    for ticket in results:
+        priority = ticket["priority"]
+
+        if priority in open_queue_counts:
+            open_queue_counts[priority] += 1
+
+    return open_queue_counts
 
 def load_existing_results():
     results = []
@@ -30,9 +43,10 @@ def load_existing_results():
 
 
 def classify_ticket(ticket_text):
-    response = client.responses.create(
-        model="gpt-4.1-mini",
-        input=f"""
+    try:
+        response = client.responses.create(
+            model="gpt-4.1-mini",
+            input=f"""
 Classify the support ticket using both category and priority.
 
 Category options:
@@ -52,9 +66,15 @@ Return ONLY valid JSON in this format:
 
 Ticket: {ticket_text}
 """
-    )
+        )
 
-    result = response.output_text.strip()
+        result = response.output_text.strip()
+
+    except Exception as e:
+        print(f"API call failed for ticket: {ticket_text}")
+        print("Error:", e)
+        return "other", "low"
+
     try:
         data = json.loads(result)
         category = data["category"].strip().lower()
@@ -73,7 +93,7 @@ Ticket: {ticket_text}
         print(f"AI returned unexpected JSON format for ticket: {result}")
         category = "other"
         priority = "low"
-    
+
     return category, priority
 
 
@@ -216,10 +236,12 @@ with open("classified_tickets_day7.json", "w") as file:
 total_category_counts = build_total_category_counts(results)
 total_priority_counts = build_total_priority_counts(results)
 sorted_results = build_sorted_results(results)
+open_queue_counts = build_open_queue_counts(results)
 
 print_summary("New Category Summary", category_counts)
 print_summary("New Priority Summary", priority_counts)
 print_summary("Total Category Summary", total_category_counts)
 print_summary("Total Priority Summary", total_priority_counts)
+print_summary("Open Queue Summary", open_queue_counts)
 print_triage_queue(sorted_results)
 print_processing_summary(processed_count, skipped_count)
