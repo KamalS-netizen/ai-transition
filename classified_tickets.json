@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "text": "User cannot login to account",
+        "category": "login"
+    },
+    {
+        "id": 2,
+        "text": "Payment failed during checkout",
+        "category": "payment"
+    },
+    {
+        "id": 3,
+        "text": "Customer requesting refund",
+        "category": "refund"
+    },
+    {
+        "id": 4,
+        "text": "Login page showing error",
+        "category": "login"
+    },
+    {
+        "id": 1,
+        "text": "User cannot login to account",
+        "category": "login"
+    },
+    {
+        "id": 2,
+        "text": "Payment failed during checkout",
+        "category": "payment"
+    },
+    {
+        "id": 3,
+        "text": "Customer requesting refund",
+        "category": "refund"
+    },
+    {
+        "id": 4,
+        "text": "Login page showing error",
+        "category": "login"
+    }
+]

@@ -56,7 +56,8 @@ for category, count in category_counts.items():
 print("\nDetailed Report")
 print("---------------")
 
-for category, tickets in ticket_report.items():
-    print(f"\n{category.upper()}:")
-    for t in tickets:
-        print(f"- {t}")
+# for category, tickets in ticket_report.items():
+#     print(f"\n{category.upper()}:")
+#     for t in tickets:
+#         print(f"- {t}")
+print(ticket_report.items())
