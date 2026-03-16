@@ -6,42 +6,49 @@
         "priority": "high"
     },
     {
+        "id": 6,
+        "text": "There is a typo on the settings page",
+        "category": "other",
+        "priority": "low",
+        "confidence": 0.85,
+        "status": "open",
+        "created_at": "2026-03-14T08:00:00"
+    },
+    {
         "id": 2,
         "text": "Payment failed during checkout",
         "category": "payment",
-        "priority": "high"
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-16T13:49:55.928072"
     },
     {
         "id": 3,
         "text": "Customer requesting refund",
         "category": "refund",
-        "priority": "medium"
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-16T13:49:59.395513"
     },
     {
         "id": 4,
         "text": "Login page showing error",
         "category": "login",
-        "priority": "high"
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-16T13:50:02.564937"
     },
     {
         "id": 5,
         "text": "Customer says they were charged twice",
         "category": "payment",
-        "priority": "high"
-    },
-    {
-        "id": 6,
-        "text": "There is a typo on the settings page",
-        "category": "other",
-        "priority": "low"
-    },
-    {
-        "id": 999,
-        "text": "Temporary test ticket",
-        "category": "other",
-        "priority": "low",
-        "confidence": 0.6,
-        "status": "open"
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-16T13:50:04.382490"
     },
     {
         "id": 7,
@@ -50,6 +57,15 @@
         "priority": "high",
         "confidence": 0.95,
         "status": "open",
-        "created_at": "2026-03-15T13:34:21.656067"
+        "created_at": "2026-03-16T13:50:05.534310"
+    },
+    {
+        "id": 8,
+        "text": "Order Status",
+        "category": "other",
+        "priority": "medium",
+        "confidence": 0.7,
+        "status": "open",
+        "created_at": "2026-03-16T14:11:00.735337"
     }
 ]

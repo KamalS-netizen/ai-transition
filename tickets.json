@@ -5,5 +5,7 @@
   {"id": 4, "text": "Login page showing error"},
   {"id": 5, "text": "Customer says they were charged twice"},
   {"id": 6, "text": "There is a typo on the settings page"}, 
-  {"id": 7, "text": "I was charged twice for my order"}
+  {"id": 7, "text": "I was charged twice for my order"},
+  {"id": 8, "text": "Order Status"}
+  
 ]
