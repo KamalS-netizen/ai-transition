@@ -306,7 +306,7 @@ def filter_tickets(results, priority=None,
         if keyword is not None and keyword.lower() not in ticket["text"].lower():
             continue
 
-        if action is not None and action.lower() not in ticket.get("action") != action:
+        if action is not None and ticket.get("action") != action:
             continue
 
         filtered.append(ticket)
