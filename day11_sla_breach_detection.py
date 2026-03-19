@@ -236,11 +236,11 @@ def print_triage_queue(sorted_results):
         if ticket["priority"] != "low":
             print(
                 f'ID: {ticket["id"]} | '
-                f'Priority: {ticket["priority"].capitalize():<5} | '
+                f'Priority: {ticket["priority"].capitalize():<7} | '
                 f'Category: {ticket["category"].capitalize():<7} | '
-                f'Text: {ticket["text"]}'
+                f'Text: {ticket["text"]} | ' 
                 f'SLA: {ticket.get("sla_hours", "N/A")} | '
-                f'Breached: {ticket.get("sla_breached", False)}| '
+                f'Breached: {ticket.get("sla_breached", False)} | '
             )
 
 def print_processing_summary(processed_count, skipped_count):

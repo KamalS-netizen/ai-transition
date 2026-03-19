@@ -298,8 +298,6 @@ def print_escalation_queue(title, results):
             f'Text: {ticket["text"]}'
         )
 
-    return escalation_queue
-
 tickets = load_tickets()
 results, processed_ids = load_existing_results()
 

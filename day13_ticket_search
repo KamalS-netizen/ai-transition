@@ -261,14 +261,14 @@ def filter_tickets(results, priority=None,
         
         filtered.append(ticket)
 
-        if sort_by == "priority":
+    if sort_by == "priority":
             priority_order = {"high": 1, "medium": 2, "low": 3}
             filtered = sorted(filtered, key=lambda x: priority_order.get(x["priority"], 4))
 
-        elif sort_by == "sla":
+    elif sort_by == "sla":
             filtered = sorted(filtered, key=lambda x: x.get("sla_hours") or 999)
 
-        elif sort_by == "created":
+    elif sort_by == "created":
             filtered = sorted(filtered, key=lambda x: x.get("created_at") or "")
 
     return filtered
