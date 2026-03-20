@@ -27,10 +27,11 @@ def load_existing_results():
     results = []
     processed_ids = set()
 
-    if os.path.exists("classified_tickets_day7.json"):
+    if os.path.exists("classified_tickets.json"):
         try:
-            with open("classified_tickets_day7.json", "r") as file:
+            with open("classified_tickets.json", "r") as file:
                 existing_results = json.load(file)
+                
         except json.JSONDecodeError:
             existing_results = []
 
@@ -503,7 +504,7 @@ review_queue_counts = {
     "Needs review": review_count
     }
 
-with open("classified_tickets_day7.json", "w") as file:
+with open("classified_tickets.json", "w") as file:
     json.dump(results, file, indent=4)
 
 total_category_counts = build_total_category_counts(results)
@@ -516,8 +517,8 @@ sla_breach_counts = build_sla_breach_summary(results)
 escalation_queue = build_escalation_queue(results)
 needs_review_tickets = filter_tickets(results, status="needs_review")
 
-action_queue = build_action_queue(results)
-action_summary = summarize_actions(action_queue)
+#action_queue = build_action_queue(results)
+#action_summary = summarize_actions(action_queue)
 #high_breached_tickets = filter_tickets(results, priority="high", breached=True)
 # medium_breached_tickets = filter_tickets(results, priority="medium", breached=True)
 # login_tickets = filter_tickets(results, category="login")
@@ -535,7 +536,7 @@ print_summary("Review Queue Summary", review_queue_counts)
 print_summary("Status Summary", total_status_counts)
 print_summary("Age Summary", aging_counts)
 print_summary("SLA Breach Summary", sla_breach_counts)
-print_summary("Action Summary ", action_summary)
+#print_summary("Action Summary ", action_summary) This is now happening in the daily workflow already
 print_triage_queue(sorted_results)
 print_tickets("Tickets to review from this Run", review_queue)
 print_tickets("Escalation Queue", escalation_queue)
