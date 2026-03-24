@@ -39,7 +39,7 @@ def build_action_queue(results):
         "action": action
         }
 
-    action_queue.append(new_ticket)
+        action_queue.append(new_ticket)
 
     return action_queue
 
