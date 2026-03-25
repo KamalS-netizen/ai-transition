@@ -17,7 +17,7 @@ This project is an AI-powered ticket analysis dashboard that:
 
 - Classifies tickets into categories (login, payment, refund, other)
 - Assigns priority levels automatically
-- Tracks SLA breaches in real-time
+- Highlights SLA breaches based on current data when the dashboard is loaded
 - Provides filtered views for operational decision-making
 - Generates AI-powered draft responses for support agents
 
