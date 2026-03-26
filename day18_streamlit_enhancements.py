@@ -74,8 +74,9 @@ st.set_page_config(page_title="Ticket Dashboard", layout="wide")
 st.title("AI Support Ticket Dashboard")
 #Store previous results
 try:
-    with open("classified_tickets.json", "r") as file:
-        results = json.load(file)
+     with open("classified_tickets.json", "r") as file:
+         results = json.load(file)
+         
 except FileNotFoundError:
     st.error("classified_tickets.json file not found.")
     st.stop()
@@ -188,5 +189,4 @@ if existing_response is not None:
             st.session_state.ai_responses[ticket_id] = response
         else:
             st.warning("Regeneration failed. Try again.")
-    
-    st.rerun()
+        st.rerun()
