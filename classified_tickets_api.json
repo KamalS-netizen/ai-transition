@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "text": "User cannot login to account",
+        "category": "login",
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-20T11:05:13.409541",
+        "sla_hours": 4,
+        "sla_breached": false
+    },
+    {
+        "id": 2,
+        "text": "Payment failed during checkout",
+        "category": "payment",
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-20T11:05:14.600819",
+        "sla_hours": 4,
+        "sla_breached": false
+    },
+    {
+        "id": 3,
+        "text": "Customer requesting refund",
+        "category": "refund",
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-20T11:05:15.865628",
+        "sla_hours": 4,
+        "sla_breached": false
+    },
+    {
+        "id": 4,
+        "text": "Login page showing error",
+        "category": "login",
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-20T11:05:18.016544",
+        "sla_hours": 4,
+        "sla_breached": false
+    },
+    {
+        "id": 5,
+        "text": "Customer says they were charged twice",
+        "category": "payment",
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-20T11:05:18.979456",
+        "sla_hours": 4,
+        "sla_breached": false
+    },
+    {
+        "id": 6,
+        "text": "There is a typo on the settings page",
+        "category": "other",
+        "priority": "low",
+        "confidence": 0.9,
+        "status": "open",
+        "created_at": "2026-03-20T11:05:20.065151",
+        "sla_hours": 72,
+        "sla_breached": false
+    },
+    {
+        "id": 7,
+        "text": "I was charged twice for my order",
+        "category": "payment",
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-20T11:05:21.686171",
+        "sla_hours": 4,
+        "sla_breached": false
+    },
+    {
+        "id": 8,
+        "text": "Order Status",
+        "category": "other",
+        "priority": "medium",
+        "confidence": 0.75,
+        "status": "open",
+        "created_at": "2026-03-20T11:05:23.040899",
+        "sla_hours": 24,
+        "sla_breached": false
+    },
+    {
+        "id": 201,
+        "text": "I cannot log in to my account",
+        "category": "login",
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-16T01:00:00",
+        "sla_hours": 4,
+        "sla_breached": true
+    },
+    {
+        "id": 202,
+        "text": "Payment failed but money deducted",
+        "category": "payment",
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-15T01:00:00",
+        "sla_hours": 4,
+        "sla_breached": true
+    },
+    {
+        "id": 203,
+        "text": "I want a refund for my order",
+        "category": "refund",
+        "priority": "high",
+        "confidence": 0.95,
+        "status": "open",
+        "created_at": "2026-03-10T01:00:00",
+        "sla_hours": 4,
+        "sla_breached": true
+    },
+    {
+        "id": 204,
+        "text": "App looks weird",
+        "category": "other",
+        "priority": "medium",
+        "confidence": 0.75,
+        "status": "open",
+        "created_at": "2026-03-17T10:00:00",
+        "sla_hours": 24,
+        "sla_breached": true
+    },
+    {
+        "id": 205,
+        "text": "asdfgh random unclear issue",
+        "category": "other",
+        "priority": "low",
+        "confidence": 0.3,
+        "status": "needs_review",
+        "created_at": "2026-03-17T10:00:00",
+        "sla_hours": 72,
+        "sla_breached": true
+    },
+    {
+        "id": 9,
+        "text": "nesciunt iure omnis dolorem tempora et accusantium consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas",
+        "category": "other",
+        "priority": "low",
+        "confidence": 0.3,
+        "status": "needs_review",
+        "created_at": "2026-03-26T12:13:23.690453",
+        "sla_hours": 72,
+        "sla_breached": false
+    },
+    {
+        "id": 10,
+        "text": "optio molestias id quia eum quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error",
+        "category": "other",
+        "priority": "low",
+        "confidence": 0.3,
+        "status": "needs_review",
+        "created_at": "2026-03-26T12:13:24.691469",
+        "sla_hours": 72,
+        "sla_breached": false
+    }
+]
