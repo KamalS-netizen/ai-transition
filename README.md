@@ -10,7 +10,7 @@
 
 Support teams handling high ticket volumes run into the same issues repeatedly:
 
-- Tickets pile up with no clear priority order — agents work on what they see first, not what matters mostr
+- Tickets pile up with no clear priority order — agents work on what they see first, not what matters most
 - SLA breaches get caught in end-of-day manual audits, hours after the deadline has already passed
 - Agents write responses from scratch for tickets that follow the same patterns every day
 - There's no live visibility into what categories of issues are spiking
